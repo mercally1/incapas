@@ -1,7 +1,13 @@
+using Infrastruture.Data;
+using Microsoft.EntityFrameworkCore;
+
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
 builder.Services.AddControllersWithViews();
+
+builder.Services.AddDbContext<RadioDbContext>(configure => 
+configure.UseSqlServer("Server=JMERCALLY\\MSSQLSERVER01; Initial Catalog=Radio; Integrated Security=True; TrustServerCertificate=true;"));
 
 var app = builder.Build();
 
