@@ -1,7 +1,7 @@
 ﻿using Infrastruture.Models;
 using Microsoft.EntityFrameworkCore;
 
-namespace Infrastruture.Data;
+namespace Infrastruture;
 
 public class RadioDbContext : DbContext
 {

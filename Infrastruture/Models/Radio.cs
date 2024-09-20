@@ -17,8 +17,5 @@ public class Radio
 
     [Required]
     [Display (Name = "Año")]
-    public int ahno { get; set; }
-
-    [Required]
-    public int time { get; set; }
+    public string? ahno { get; set; }
 }
